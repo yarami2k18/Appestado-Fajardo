@@ -1,0 +1,1 @@
+export const URL_API = 'https://breadshop-c0781-default-rtdb.firebaseio.com';
