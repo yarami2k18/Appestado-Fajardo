@@ -4,5 +4,5 @@ const { SELECT_CATEGORY } = categoryTypes;
 
 export const selectedCategory = (id) => ({
     type: SELECT_CATEGORY,
-    category: id
+    categoryId: id
 });

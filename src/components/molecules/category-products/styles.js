@@ -7,7 +7,10 @@ export const styles = StyleSheet.create({
   container: {
     flex: 1,
     height: height / 3,
-    marginHorizontal: 18,
+    marginHorizontal: 30,
+    backgroundColor: '#ff82ff',
+    marginVertical:30,
+    borderRadius: 8
   },
   touchable: {
     flex: 1,
