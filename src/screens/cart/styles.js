@@ -1,31 +1,37 @@
-import { StylesSheet } from "react-native";
+import { StyleSheet } from "react-native";
 import { colors } from "../../constants/themes"
-export const styles = StylesSheet.create({
+export const styles = StyleSheet.create({
     container: {
         flex: 1,
-        marginHorizontal: 20
+        marginHorizontal: 20,
+        marginTop: 20,
     },
     list: {
-        flex: .8
+        flex: .9,
+       marginVertical: 20,
     },
     footer: {
-        flex: 2,
+        flex: 1,
+        flexGrow: 0.1,
         boderTopColor: colors.primaryColor,
         borderTopWidth: 1,
         flexDirection: "row",
         alignItem: "center",
-        justifyContent: "flex-end"
+        justifyContent: "flex-start",
+        marginHorizontal: 20,
     },
     total: {
         fondSize: 18,
         fontFamily: 'OpenSans-Regular',
-        padding: 10
+        padding: 8,
+        color: '#0a0a0a'
 
     },
     totalPrice: {
         fondSize: 16,
         fontFamily: 'OpenSans-Bold',
-        padding: 10
+        padding: 8,
+        color: colors.primaryColor
 
     },
 

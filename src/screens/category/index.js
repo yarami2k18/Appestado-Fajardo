@@ -22,7 +22,6 @@ const Category = ({navigation, route}) => {
    dispatch(filteredProducts(selectedCategory.id));
   }, [selectedCategory?.id]);
 
-  console.log(selectedCategory)
 
   return (
       <View style={styles.container}>
