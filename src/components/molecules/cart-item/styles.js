@@ -9,7 +9,8 @@ export const styles = StyleSheet.create({
     },
     name: {
         fontSize: 20,
-        color: '#0a0a0a'
+        color: '#0a0a0a',
+        fontWeight: 'bold',
     },
     details: {
         flex: 1,

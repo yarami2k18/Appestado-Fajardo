@@ -21,5 +21,8 @@ export const styles = StyleSheet.create({
   Image: {
     width: '80%',
     height: '40%',
+  },
+  cartButton: {
+    marginVertical: 20,
   }
 });

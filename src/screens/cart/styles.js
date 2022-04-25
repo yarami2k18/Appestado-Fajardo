@@ -16,23 +16,20 @@ export const styles = StyleSheet.create({
         boderTopColor: colors.primaryColor,
         borderTopWidth: 1,
         flexDirection: "row",
-        alignItem: "center",
+        alignItems: "center",
         justifyContent: "flex-start",
         marginHorizontal: 20,
     },
     total: {
-        fondSize: 18,
+        fontSize: 18,
         fontFamily: 'OpenSans-Regular',
-        padding: 8,
         color: '#0a0a0a'
-
     },
     totalPrice: {
-        fondSize: 16,
-        fontFamily: 'OpenSans-Bold',
+        fontSize: 20,
+        fontWeight: 'bold',
         padding: 8,
         color: colors.primaryColor
-
     },
 
 });

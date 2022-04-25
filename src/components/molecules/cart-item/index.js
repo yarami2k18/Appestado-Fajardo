@@ -11,7 +11,7 @@ const CartItem = ({item, onDelete}) => {
       </View>
       <View style={styles.details}>
         <View>
-          <Text style={styles.queanty}>cantidad: {item.quanty}</Text>
+          <Text style={styles.queanty}>Cantidad: {item.quantity}</Text>
         </View>
         <View>
           <Text style={styles.price}>${item.price}</Text>
