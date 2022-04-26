@@ -21,9 +21,6 @@ const Home = ({navigation}) => {
   const renderItem = ({item}) => (
     <CategoryGrid item={item} onSelected={handleSelectCategory} />
   );
-
-  // useEffect es una funcion que se va a ejecutar cada vez que cambie algo de
-  // lo que esta dentro delos corchetes [navigation, total]
   useEffect(() => {
     navigation.setOptions({
       headerTitle: "Yara's store",

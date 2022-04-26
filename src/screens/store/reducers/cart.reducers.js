@@ -40,16 +40,6 @@ const cartReducer = (state = initialState, action) => {
       };
 
     case REMOVE_ITEM:
-      /*
-        BUSCO EL ITEM EN EL CARRITO
-        SI NO EXISTE
-          NO HAGA NADA
-        
-        SI LA CANTIDAD DESPUES DE DECREMENTAR QUEDO EN CERO ENTONCES BORRO EL ITEM
-        SI LA CANTIDAD DESPUES DE DECREMENTAR ES MAYOR A CERO ENTONCES LE DECREMENTO 1
-
-        DEVUELVO EL NUEVO STATE, CON LOS ITEMS Y EL TOTAL RECALCULADO
-      */
 
       const existingItem = state.items.find(item => item.id === action.id);
       if (!existingItem) {

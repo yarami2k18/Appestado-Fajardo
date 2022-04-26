@@ -1,14 +1,19 @@
 import React, { useEffect } from 'react';
-import {View, Text, FlatList} from 'react-native';
+import {View, Text, FlatList, Button} from 'react-native';
 import {connect, useDispatch, useSelector} from 'react-redux';
 import CartItem from '../../components/molecules/cart-item/index';
 import {styles} from './styles';
-import { removeItem } from '../store/reducers/actions/cartaction';
+import { confirmCart, removeItem } from '../store/reducers/actions/cartaction';
+import { colors } from '../../constants/themes';
 
 const Cart = ({ navigation }) => {
   const dispatch = useDispatch();
   const items = useSelector(state => state.cart.items);
   const total = useSelector(state => state.cart.total);
+
+  const handleConfirmCart = () => {
+    dispatch(confirmCart(items))
+  }
 
   useEffect(() => {
     navigation.setOptions({
@@ -31,6 +36,7 @@ const Cart = ({ navigation }) => {
           renderItem={renderItem}
         />
       </View>
+      <Button title="Confirm" onPress={() => handleConfirmCart()} color={colors.primaryColor} />
       <View style={styles.footer}>
           <Text style={styles.total}>Total:</Text>
           <Text style={styles.totalPrice}>${total}</Text>
