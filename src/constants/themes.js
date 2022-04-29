@@ -3,4 +3,6 @@ export const colors = {
     accentColor: '#de4c8a',
     textColor: '#0a0a0a',
     backgroundColor: '#ed66e1',
+    errorMessage: 'red',
+    placeholder: '#ff00ff'
 }
