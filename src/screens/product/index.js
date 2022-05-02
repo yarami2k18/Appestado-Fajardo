@@ -27,13 +27,6 @@ const Products = ({navigation, route}) => {
           onPress={handleAddToCart}
           color={colors.primaryColor}
         />
-        <View style={styles.cartButton}>
-          <Button
-            title="Cart"
-            onPress={() => navigation.navigate('Cart')}
-            color="#655cff"
-          />
-        </View>
       </View>
     </View>
   );
