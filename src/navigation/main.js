@@ -26,7 +26,7 @@ const MainNavigator = () => {
         }}
       />
       <TabStack.Screen
-        name="Cart"
+        name="CartNavigator"
         component={CartNavigator}
         options={{
           tabBarIcon: ({focused}) => (
@@ -35,7 +35,7 @@ const MainNavigator = () => {
         }}
       />
       <TabStack.Screen
-        name="Order"
+        name="OrderNavigator"
         component={OrderNavigator}
         options={{
           tabBarIcon: ({focused}) => (

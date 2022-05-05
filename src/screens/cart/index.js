@@ -10,9 +10,10 @@ const Cart = ({ navigation }) => {
   const dispatch = useDispatch();
   const items = useSelector(state => state.cart.items);
   const total = useSelector(state => state.cart.total);
+  const user = useSelector(state => state.auth.userId);
 
   const handleConfirmCart = () => {
-    dispatch(confirmCart(items))
+    dispatch(confirmCart(items, total, user))
   }
 
   useEffect(() => {
